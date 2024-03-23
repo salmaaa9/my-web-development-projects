@@ -1,0 +1,266 @@
+
+.top-cont{
+    background-image: url(./images/drew-coffman-1872.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+.clear-fix{
+    clear: both;
+}
+
+.hero {
+    width: 50%;
+    color: white;
+    text-align: center;
+    font-family: "Alegreya", serif;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding-top: 80px;
+}
+.hero p{
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+button:hover{
+background-color: white;
+color: black;
+}
+.blearn{
+    height: 50px;
+    font-size: 14px;
+    background-color: rgb(120, 77, 20);
+    color: whitesmoke;
+    border: 2px solid transparent;
+    padding: 15px 28px;
+    border-radius: 7px;
+}
+.bcontact{
+    font-size: 14px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid wheat;
+    padding: 15px 28px;
+    border-radius: 7px;
+}
+.logo-nav{
+    position: sticky;
+    top: 0px;
+    padding-top: 20px;
+    background-color: rgb(245, 245, 245);
+    z-index: 10;
+}
+.logo-nav .logo {
+    float: left;
+    margin-left: 150px;
+}
+.nav {
+    list-style-type: none;
+    margin-left: 750px;
+
+}
+.nav li {
+    display: inline-block;
+    margin-right: 10px;
+    width: 80px;
+}
+.logo-nav .nav a {
+    text-decoration: none;
+    color:rgb(14, 11, 11);
+    display: block;
+    text-align: center;
+    font-family: "Alegreya", serif;
+}
+.side-bar{
+    background-color: white;
+    width: 50px;
+    position: fixed;
+    right: 0;
+    top: 25%;
+
+}
+.side-bar a{
+    display: block;
+}
+.scroll-button{
+width: 32px;
+height: 50px;
+border-radius: 24px;
+position: relative;
+left: 0;
+z-index: 4;
+display: inline-block;
+border: 2px solid rgba(255, 255, 255, 0.7);
+color: #fff;
+cursor: pointer;
+margin-bottom: 75px;
+
+}
+.scroll-button a{
+    text-decoration: none;
+    color: transparent;
+}
+.who-we-are{
+    margin-top: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.who-we-are-img{
+    float: left;
+    width: 50%;
+    
+}
+ h2,h3,h4{
+    font-family: "Alegreya", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size:30px;
+}
+p{
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:large;
+    padding: 20px 15px;
+    color: rgb(105, 102, 102);
+}
+.who-we-are-text ul{
+ list-style-type: none;
+} 
+.who-we-are-text ul img{
+    border: 1px solid rgb(216, 207, 207);
+    padding: 5px;
+    border-radius: 20px;
+    float: left;
+}
+.who-we-are-text li{
+    padding: 15px 0 15px 56px;
+    margin-bottom: 9px;
+}
+
+.our-location{
+    margin-top: 60px;
+    padding: 90px 50px;
+    background-color: #6868680b;
+
+}
+.our-location-img{
+    float: right;
+    margin-right: 100px;
+    margin-left: 80px;
+}
+.our-location-text{
+        font-size:large;
+        padding: 20px 15px;
+        margin-top: 50px;
+        margin-left: 90px;
+}
+.our-baking{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.food{
+    float: left;
+    width: 30%;
+    margin-right: 40px;
+}
+.food h4{
+    font-size: 20px;
+}
+.contact{
+    margin-top: 100px;
+    padding: 90px 50px;
+    background-color: #6868680b;
+}
+.contact-text{
+    float:  left;
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right:  70px;
+}
+.contact-text ul{
+    list-style: none;
+}
+.contact-text li{
+    padding: 15px 0 15px 56px;
+    margin-bottom: 9px;
+}
+.contact-text ul img{
+    background-color: rgb(149, 98, 37);
+    border: 1px solid rgb(216, 207, 207);
+    padding: 5px;
+    border-radius: 20px;
+    float: left;
+}
+.info{
+    background-color: #403d38;
+}
+.info-items{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-item{
+    width: 20%;
+    color: #e0d8d8;
+    float: left;
+    margin-right: 60px;
+}
+.info-item p{
+    color: #e0d8d8;
+}
+.info-item  h4{
+    color: #fff;
+    font-size: 20px;
+}
+.info-item ul{
+    list-style: none;
+}
+.info-item li{
+    padding-bottom: 9px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.info-item ul a{
+    text-decoration: none;
+    color: #e0d8d8;
+}
+#backinfo{
+    background: url(./images/contact-details-map.png) no-repeat center center;
+}
+.footer{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #353330;
+}
+.footer a img{
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 40px;
+    background-color: #484540;;
+}
+.scroll-up a{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: absolute;
+    right: 15px;
+    border: 2px solid white;
+    color: #671515;
+    margin-bottom: 75px;
+}
+
+
+
+
