@@ -1,0 +1,202 @@
+
+/************container*************/
+@media screen and (max-width : 992px){
+    .container {
+        max-width: 720px;
+    
+      }
+}
+
+@media screen and (max-width : 768px) {
+    .container {
+        max-width: 540px;
+      }
+}
+@media screen and (max-width: 576px){
+    .container {
+    padding-inline: 15px;
+    }
+}
+@media screen and (max-width : 400px){
+    * {
+        max-width: 356px;
+      }
+}
+@media screen and (min-width : 993px){
+    .container {
+        max-width: 960px;
+    }
+    .home .container{
+        text-align:left;
+    }
+    .btn-group .book{
+        padding: 10px 30px;
+        background-color: #ce1212;
+        border-radius: 0 30px 30px;
+        color: white;
+    }
+}
+@media screen and (min-width : 1201px){
+    .container {
+        max-width: 1140px;
+      }
+      .nav-links{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width:1400px){
+    .container {
+        max-width: 1320px;
+      }
+      .nav-links{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+/**************home*************/
+@media screen and (min-width:400px){
+    #home .btn-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width : 993px){
+   #home .container{
+    display: flex;
+    flex-direction: row;
+   }
+   #home .img{
+    width: 40%;
+   }
+   #home .home-content{
+    width: 40%;
+   }
+}
+@media (min-width : 1201px){
+    .home-content{
+        align-items: start;
+    }
+  
+}
+/**************chefs*************/
+@media (min-width : 769px){
+    .chefs-cards .card{
+        width: 45%;
+    }
+}
+@media (min-width : 993px){
+
+    .chefs-cards .card{
+        width: 30.33%;
+    }
+}
+@media (min-width : 1201px){
+    .chefs-cards .card{
+        width: 30.33%;
+    }
+    
+}
+/************gallery***************/
+@media (max-width:765){
+    .gallery .gallery-photos{
+        gap: 15px;
+    }
+}
+@media (min-width : 769px){
+    .gallery .gallery-photos{
+        height: 1405px;
+        flex-wrap: wrap;
+        columns: 2;
+        gap: 15px;
+    }
+    .meal{
+        width: 45%;
+    }
+    .pizza{
+        order: 1;
+    }
+    .burger{
+        order: 2;
+    }
+    .pizza-slices{
+        order: 3;
+    }
+    .eggs{
+        order: 4;
+    }
+    .steak{
+        order: 5;
+    }
+    .chicken{
+        order: 6;
+    }
+    .kofta{
+        order: 7;
+    }
+}
+@media (min-width : 993px){
+
+    .gallery .gallery-photos{
+        display: block;
+        columns: 3;
+        gap: 15px;
+        height: auto;
+      }
+      .meal{
+        width: 100%;
+    }
+}
+/****************contact************************/
+@media (min-width : 769px){
+    .address,.email,.phone,.opening-hours{
+        width: 48%;
+    }
+    .details{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    form .input-group{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    form .input-group input{
+        width: 49%;
+    }
+}
+/****************footer******************/
+@media (min-width : 577px){
+    footer .subscription-group{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    footer .subscription-group button{
+        width: 6.875rem;
+    }
+}
+@media (min-width : 769px){
+   footer .container{
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+   }
+   footer .container .about{
+    width: 45%;
+    order: 1;
+   }
+   footer .container .contact-details{
+    width: 45%;
+    order: 1;
+   }
+   footer .container .subscription{
+    width: 100%;
+    order: 2;
+   }
+}
