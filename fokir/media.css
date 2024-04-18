@@ -1,0 +1,5 @@
+@media screen and (min-width :1700px) {
+    .service-item{
+        width: 25%;
+    }
+}
