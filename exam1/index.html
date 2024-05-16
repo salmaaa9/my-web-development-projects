@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniels</title>
+    <link rel="icon" href="./imgs/favicon.ico">
+
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/142480f679.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#nav-bar">
+
+    <!-- nav -->
+    <nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-10 fixed-top text-white py-3 z-3">
+        <div class="container">
+          <a class="navbar-brand text-white heading" href="#">DANIELS</a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i style="font-size: 2rem;" class="fa fas fa-bars border-0 text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse flex-lg-grow-0" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link text-white active px-lg-3" aria-current="page" href="#home">Home</a>
+              <a class="nav-link text-white px-lg-3" href="#about">About</a>
+              <a class="nav-link text-white px-lg-3" href="#services">Services</a>
+              <a class="nav-link text-white px-lg-3" href="#portfolio">Works</a>
+              <a class="nav-link text-white px-lg-3" href="#testimonial">Clients</a>
+              <a class="nav-link text-white px-lg-3" href="#team">Team</a>
+              <a class="nav-link text-white px-lg-3" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- hero -->
+    <header class="main-header text-center vh-100 text-white">
+      <script>
+           const header = document.querySelector('.main-header');
+
+window.addEventListener('scroll', function() {
+  header.classList.add('scrolling');
+});
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset === 0) {
+    header.classList.remove('scrolling');
+  }
+});
+      </script>
+        <div id="home"  class="layer bg-black bg-opacity-60 w-100 vh-100">    
+        </div>
+        <div class="container">
+            <div class="hero position-absolute top-50 start-50 translate-middle">
+                <h5 class="heading">Hello</h5>
+                <h1 class="heading w-200 py-4">I Am <span class="w-400" id="element"></span></h1>
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                <script>
+                    var longestWordLength = 10; // adjust this to the length of the longest word
+                    var speed = longestWordLength * 100;
+                    var typed = new Typed('#element', {
+                      strings: [
+                        'Larry Daniels',
+                        'Developer',
+                        'Designer',
+                    ],
+                      typeSpeed: 50,
+                      backSpeed:50,
+                      loop: true,
+                    });        
+                  </script>
+
+            </div>
+            
+            <div class="social icons d-flex flex-row position-absolute start-50 translate-middle-x">
+              <a href="" class="d-flex text-decoration-none me-2 justify-content-center align-items-center"><i class="fab fab fa-facebook-f fas fa-border-all fa-sm text-white"></i></a>
+              <a href="" class="d-flex text-decoration-none me-2 justify-content-center align-items-center"><i class="fab fa-twitter fa-border-all fa-sm text-white "></i></a>
+              <a href="" class="d-flex text-decoration-none me-2 justify-content-center align-items-center"><i class="fab fab fa-linkedin fa-border-all fa-sm  text-white"></i></a>
+              <a href="" class="d-flex text-decoration-none me-2 justify-content-center align-items-center"><i class="fab fab fa-behance fa-border-all fa-sm  text-white"></i></a>
+              <a href="" class="d-flex text-decoration-none me-2 justify-content-center align-items-center"><i class="fab fab fab fa-youtube fa-border-all fa-sm text-white"></i></a>
+
+          </div>
+        </div>
+        
+          
+    </header>
+    <!-- end hero -->
+
+    <!-- main -->
+    <main>
+    <!-- about -->
+    <section id="about" class="about pt-5 mb-5">
+      <div class="container mt-5 px-5 py-5">
+          <div class="row">
+              <div class="col-md-5 mb-4 h-auto">
+                <div class="about-img position-relative">
+                  <img class="img-fluid" src="./imgs/hero.jpg" alt="">
+                </div>
+                          
+              </div>
+              <div class="col-md-7 mt-4 mt-lg-0">
+                  <h2 class="h1 heading mb-1">About me</h2>
+                  <span class="sub-title">UI / UX Designer &amp; Web Developer</span>
+                  <p class="lead my-4 mb-5">
+                    I am <span class="w-700">Jerry Daniels</span>Jerry Daniels Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever It has survived not only five centuries, but also the leap into electronic but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                  </p>
+                  <div class="skill mt-2">
+            
+                    <div class="progress position-relative">
+                      <div class="progress-bar  text-start h-100 shadow position-absolute top-0 start-0 px-2 d-flex flex-row justify-content-between align-items-center" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><h6 class="heading">Web Design</h6><h6 class="heading">95%</h6></div>
+                    </div>
+                    <div class="progress position-relative">
+                      <div class="progress-bar  text-start h-100 shadow position-absolute top-0 start-0 px-2 d-flex flex-row justify-content-between align-items-center" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><h6 class="heading">Branding</h6><h6 class="heading">80%</h6></div>
+                    </div>
+                    <div class="progress position-relative">
+                      <div class="progress-bar  text-start h-100 shadow position-absolute top-0 start-0 px-2 d-flex flex-row justify-content-between align-items-center" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><h6 class="heading">Development</h6><h6 class="heading">90%</h6></div>
+                    </div>
+
+                    
+                </div>
+                <div class="buttons pt-4">
+                  <button class="dawnload btn btn-dark">Dawnload C.V</button>
+                  <button class="contact btn border-1 border-dark px-4">Contact Me</button>
+                </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!--end about -->
+
+    <!-- services -->
+    <section id="services" class="services mb-5 section-padding bg-grey">
+        
+      <div class="container text-center">
+      
+      <header class="mb-5 pb-5">
+          <h3 class="section-heading position-relative">SERVICES</h3>
+          <div class="title-dots"></div>
+      </header>
+          
+      <div class="row gy-5 gx-4">
+          <div class="services-card col-md-4 ">
+              <div class="services-content bg-white rounded-2">
+                  <div class="service-icon mb-4">
+                      <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fas fa-laptop fa-xl"></i></span>   
+                  </div>
+                  <div class="service-txt">
+                      <h2 class="h5 heading mb-3">WEB DESIGN</h2>
+                      <p class="txt-grey">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+                  </div>
+              </div>
+              
+              
+          </div>
+
+          <div class="services-card col-md-4 ">
+              <div class="services-content bg-white px-2 py-5 rounded-2">
+                  <div class="service-icon mb-4">
+                      <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fas fa-bullhorn fa-xl"></i></span>   
+                  </div>
+                  <div class="service-txt">
+                      <h2 class="h5 heading mb-3">WEB DEVELOPMENT</h2>
+                      <p class="txt-grey">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+                  </div>
+              </div>
+              
+              
+          </div>
+
+          <div class="services-card col-md-4 ">
+              <div class="services-content bg-white rounded-2">
+                  <div class="service-icon mb-4">
+                      <span class="icon-circle d-flex justify-content-center align-items-center"><i class="fas fa-umbrella fa-xl"></i></span>   
+                  </div>
+                  <div class="service-txt">
+                      <h2 class="h5 heading mb-3">Photography</h2>
+                      <p class="txt-grey">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+                  </div>
+              </div>
+              
+              
+          </div>
+
+          <div class="services-card col-md-4 ">
+              <div class="services-content bg-white rounded-2">
+                  <div class="service-icon mb-4">
+                      <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="far fa-gem fa-xl"></i></span>   
+                  </div>
+                  <div class="service-txt">
+                      <h2 class="h5 heading mb-3">RESPONSIVE DESIGN</h2>
+                      <p class="txt-grey">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+                  </div>
+              </div>
+              
+              
+          </div>
+
+          <div class="services-card col-md-4 ">
+              <div class="services-content bg-white rounded-2">
+                  <div class="service-icon mb-4">
+                      <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fas fa-tv fa-xl"></i></span>   
+                  </div>
+                  <div class="service-txt">
+                      <h2 class="h5 heading mb-3">GRAPHIC DESIGN</h2>
+                      <p class="txt-grey">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+                  </div>
+              </div>
+              
+              
+          </div>
+
+          <div class="services-card col-md-4 ">
+              <div class="services-content bg-white rounded-2">
+                  <div class="service-icon mb-4">
+                      <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fas fa-camera fa-xl"></i></span>   
+                  </div>
+                  <div class="service-txt">
+                      <h2 class="h5 heading mb-3">MARKETING SERVICES</h2>
+                      <p class="txt-grey">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+                  </div>
+              </div>
+              
+              
+          </div>
+          
+          
+      </div>
+
+      </div>
+      
+
+  </section>
+    <!--end services -->
+
+    <!-- portfolio -->
+    <section id="portfolio" class="portfolio mb-5 section-padding">
+        
+      <div class="container text-center">
+      
+      <header class="mb-5 pb-5">
+          <h3 class="section-heading position-relative">portfolio</h3>
+          <div class="title-dots"></div>
+      </header>
+
+      <ul class="nav nav-underline justify-content-center border-0" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="All-tab" data-bs-toggle="tab" data-bs-target="#All-tab-pane" type="button" role="tab" aria-controls="All-tab-pane" aria-selected="true">All</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Brand-tab" data-bs-toggle="tab" data-bs-target="#Brand-tab-pane" type="button" role="tab" aria-controls="Brand-tab-pane" aria-selected="false">Brand</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Design-tab" data-bs-toggle="tab" data-bs-target="#Design-tab-pane" type="button" role="tab" aria-controls="Design-tab-pane" aria-selected="false">Design</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Graphic-tab" data-bs-toggle="tab" data-bs-target="#Graphic-tab-pane" type="button" role="tab" aria-controls="Graphic-tab-pane" aria-selected="false">Graphic</button>
+        </li>
+      </ul>
+
+
+      <div class="tab-content pt-5" id="myTabContent">
+        <div class="tab-pane fade show active" id="All-tab-pane" role="tabpanel" aria-labelledby="All-tab" tabindex="0">
+          
+          <div class="row gy-5 gx-4">
+          
+          <div class="portfolio-card col-md-4 col-sm-6  ">
+                <div class="portfolio-content bg-white rounded-2 position-relative">
+                    <div class="portfolio-img mb-4">
+                          <img src="./imgs/portfolio/1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="layer position-absolute">
+                     <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                      <h6 class="text-bg-dar">WEB DESIGN</h6>
+  
+                      <div class="icons d-flex justify-content-center">
+                        
+                        <div class="icon me-2">
+                          <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                        </div>
+                        <div class="icon">
+                          <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                        </div>
+                      </div>
+  
+                     </div>
+                    
+                    </div>
+                </div>
+                
+                
+          </div>
+          <div class="portfolio-card col-md-4 col-sm-6  ">
+                <div class="portfolio-content bg-white rounded-2 position-relative">
+                    <div class="portfolio-img mb-4">
+                          <img src="./imgs/portfolio/2.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="layer position-absolute">
+                     <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                      <h6 class="text-bg-dar">WEB DESIGN</h6>
+  
+                      <div class="icons d-flex justify-content-center">
+                        
+                        <div class="icon me-2">
+                          <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                        </div>
+                        <div class="icon">
+                          <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                        </div>
+                      </div>
+  
+                     </div>
+                    
+                    </div>
+                </div>
+                
+                
+          </div>
+          <div class="portfolio-card col-md-4 col-sm-6  ">
+                <div class="portfolio-content bg-white rounded-2 position-relative">
+                    <div class="portfolio-img mb-4">
+                          <img src="./imgs/portfolio/3.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="layer position-absolute">
+                     <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                      <h6 class="text-bg-dar">WEB DESIGN</h6>
+  
+                      <div class="icons d-flex justify-content-center">
+                        
+                        <div class="icon me-2">
+                          <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                        </div>
+                        <div class="icon">
+                          <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                        </div>
+                      </div>
+  
+                     </div>
+                    
+                    </div>
+                </div>
+                
+                
+          </div>
+          <div class="portfolio-card col-md-4 col-sm-6  ">
+                <div class="portfolio-content bg-white rounded-2 position-relative">
+                    <div class="portfolio-img mb-4">
+                          <img src="./imgs/portfolio/4.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="layer position-absolute">
+                     <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                      <h6 class="text-bg-dar">WEB DESIGN</h6>
+  
+                      <div class="icons d-flex justify-content-center">
+                        
+                        <div class="icon me-2">
+                          <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                        </div>
+                        <div class="icon">
+                          <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                        </div>
+                      </div>
+  
+                     </div>
+                    
+                    </div>
+                </div>
+                
+                
+          </div>
+          <div class="portfolio-card col-md-4 col-sm-6  ">
+                <div class="portfolio-content bg-white rounded-2 position-relative">
+                    <div class="portfolio-img mb-4">
+                          <img src="./imgs/portfolio/5.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="layer position-absolute">
+                     <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                      <h6 class="text-bg-dar">WEB DESIGN</h6>
+  
+                      <div class="icons d-flex justify-content-center">
+                        
+                        <div class="icon me-2">
+                          <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                        </div>
+                        <div class="icon">
+                          <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                        </div>
+                      </div>
+  
+                     </div>
+                    
+                    </div>
+                </div>
+                
+                
+          </div>
+          <div class="portfolio-card col-md-4 col-sm-6  ">
+                <div class="portfolio-content bg-white rounded-2 position-relative">
+                    <div class="portfolio-img mb-4">
+                          <img src="./imgs/portfolio/6.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="layer position-absolute">
+                     <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                      <h6 class="text-bg-dar">WEB DESIGN</h6>
+  
+                      <div class="icons d-flex justify-content-center">
+                        
+                        <div class="icon me-2">
+                          <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                        </div>
+                        <div class="icon">
+                          <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                        </div>
+                      </div>
+  
+                     </div>
+                    
+                    </div>
+                </div>
+                
+                
+          </div>
+  
+          
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="Brand-tab-pane" role="tabpanel" aria-labelledby="Brand-tab" tabindex="0">
+          <div class="row gy-5 gx-4">
+          
+            <div class="portfolio-card col-md-4 col-sm-6  ">
+                  <div class="portfolio-content bg-white rounded-2 position-relative">
+                      <div class="portfolio-img mb-4">
+                            <img src="./imgs/portfolio/4.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="layer position-absolute">
+                       <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                        <h6 class="text-bg-dar">WEB DESIGN</h6>
+    
+                        <div class="icons d-flex justify-content-center">
+                          
+                          <div class="icon me-2">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                          </div>
+                          <div class="icon">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                          </div>
+                        </div>
+    
+                       </div>
+                      
+                      </div>
+                  </div>
+                  
+                  
+            </div>
+            <div class="portfolio-card col-md-4 col-sm-6  ">
+                  <div class="portfolio-content bg-white rounded-2 position-relative">
+                      <div class="portfolio-img mb-4">
+                            <img src="./imgs/portfolio/6.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="layer position-absolute">
+                       <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                        <h6 class="text-bg-dar">WEB DESIGN</h6>
+    
+                        <div class="icons d-flex justify-content-center">
+                          
+                          <div class="icon me-2">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                          </div>
+                          <div class="icon">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                          </div>
+                        </div>
+    
+                       </div>
+                      
+                      </div>
+                  </div>
+                  
+                  
+            </div>
+         
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="Design-tab-pane" role="tabpanel" aria-labelledby="Design-tab" tabindex="0">
+          <div class="row gy-5 gx-4">
+          
+            <div class="portfolio-card col-md-4 col-sm-6  ">
+                  <div class="portfolio-content bg-white rounded-2 position-relative">
+                      <div class="portfolio-img mb-4">
+                            <img src="./imgs/portfolio/2.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="layer position-absolute">
+                       <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                        <h6 class="text-bg-dar">WEB DESIGN</h6>
+    
+                        <div class="icons d-flex justify-content-center">
+                          
+                          <div class="icon me-2">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                          </div>
+                          <div class="icon">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                          </div>
+                        </div>
+    
+                       </div>
+                      
+                      </div>
+                  </div>
+                  
+                  
+            </div>
+            <div class="portfolio-card col-md-4 col-sm-6  ">
+                  <div class="portfolio-content bg-white rounded-2 position-relative">
+                      <div class="portfolio-img mb-4">
+                            <img src="./imgs/portfolio/5.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="layer position-absolute">
+                       <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                        <h6 class="text-bg-dar">WEB DESIGN</h6>
+    
+                        <div class="icons d-flex justify-content-center">
+                          
+                          <div class="icon me-2">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                          </div>
+                          <div class="icon">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                          </div>
+                        </div>
+    
+                       </div>
+                      
+                      </div>
+                  </div>
+                  
+                  
+            </div>
+         
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="Graphic-tab-pane" role="tabpanel" aria-labelledby="Graphic-tab" tabindex="0">
+          <div class="row gy-5 gx-4">
+          
+            <div class="portfolio-card col-md-4 col-sm-6  ">
+                  <div class="portfolio-content bg-white rounded-2 position-relative">
+                      <div class="portfolio-img mb-4">
+                            <img src="./imgs/portfolio/1.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="layer position-absolute">
+                       <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                        <h6 class="text-bg-dar">WEB DESIGN</h6>
+    
+                        <div class="icons d-flex justify-content-center">
+                          
+                          <div class="icon me-2">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                          </div>
+                          <div class="icon">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                          </div>
+                        </div>
+    
+                       </div>
+                      
+                      </div>
+                  </div>
+                  
+                  
+            </div>
+            <div class="portfolio-card col-md-4 col-sm-6  ">
+                  <div class="portfolio-content bg-white rounded-2 position-relative">
+                      <div class="portfolio-img mb-4">
+                            <img src="./imgs/portfolio/3.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="layer position-absolute">
+                       <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                        <h6 class="text-bg-dar">WEB DESIGN</h6>
+    
+                        <div class="icons d-flex justify-content-center">
+                          
+                          <div class="icon me-2">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                          </div>
+                          <div class="icon">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                          </div>
+                        </div>
+    
+                       </div>
+                      
+                      </div>
+                  </div>
+                  
+                  
+            </div>
+            <div class="portfolio-card col-md-4 col-sm-6  ">
+                  <div class="portfolio-content bg-white rounded-2 position-relative">
+                      <div class="portfolio-img mb-4">
+                            <img src="./imgs/portfolio/5.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="layer position-absolute">
+                       <div class="layer-info position-absolute top-50 start-50 translate-middle">
+                        <h6 class="text-bg-dar">WEB DESIGN</h6>
+    
+                        <div class="icons d-flex justify-content-center">
+                          
+                          <div class="icon me-2">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-chain-broken fa-xs"></i></span>
+                          </div>
+                          <div class="icon">
+                            <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-search-plus fa-xs"></i></span>
+                          </div>
+                        </div>
+    
+                       </div>
+                      
+                      </div>
+                  </div>
+                  
+                  
+            </div>
+         
+          </div>
+        </div>
+        
+      </div>
+
+      </div>
+      
+    </section>
+    <!--end portfolio -->
+
+    <!-- testimonial -->
+      <section id="testimonial" class="testimonial pb-5 mb-5 section-padding position-relative bg-grey">
+        
+        <div class="container">
+        <header class="mb-5 pb-5">
+            <h3 class="section-heading position-relative">testimonial</h3>
+            <div class="title-dots"></div>
+        </header>
+
+      <div id="carousel" class="container carousel slide position-relative w-75 text-center">
+            
+          <div class="carousel-inner pb-5">
+            <div class="carousel-item  active">
+              <img class="rounded-circle" src="./imgs/1_New1.jpg" alt="" width="100px">   
+              <p class=" pt-4 txt-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eius fugiat ratione exercitationem dolorem, ullam quasi?</p>
+              <h4 class="pt-1">Xavi Alonso</h4>
+              <span class="txt-grey mb-5">Lorem, ipsum.</span>
+            </div>
+            <div class="carousel-item">
+              <img class="rounded-circle" src="./imgs/1_New1.jpg" alt="" width="100px">
+              
+              <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eius fugiat ratione exercitationem dolorem, ullam quasi?</p>
+              <h4 class="pt-1">Xavi Alonso</h4>
+              <span class="txt-grey mb-5">Lorem, ipsum.</span>
+            </div>
+            <div class="carousel-item">
+              <img class="rounded-circle" src="./imgs/1_New1.jpg" alt="" width="100px">
+              
+              <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eius fugiat ratione exercitationem dolorem, ullam quasi?</p>
+              <h4 class="pt-1">Xavi Alonso</h4>
+              <span class="txt-grey mb-5">Lorem, ipsum.</span>
+            </div>
+          </div>
+
+          <div class="carousel-indicators position-absolute bottom-0 pt-3">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide "></button>
+          </div>
+
+      </div>
+
+        </div>
+
+        
+                         
+           
+      </section>   
+    <!--end testimonial -->
+
+  <!-- counter -->
+  <section class="counter mb-5 section-padding position-relative">
+        
+      <div class="container position-relative">
+              <div class="row">
+                  <div class="col-sm-3 text-center">
+                      <div class="icon mb-4">
+                          <span class="d-flex justify-content-center align-items-center"> <i class="fas fa-users fa-xl"></i></span>   
+                      </div>
+                      <h5>840</h5>
+                      <p class="txt-grey">Happy Customers</p>
+                  </div>
+                  <div class="col-sm-3 text-center">
+                      <div class="icon mb-4">
+                          <span class="d-flex justify-content-center align-items-center"> <i class="fas fa-thumbs-up fa-xl"></i></span>   
+                      </div>
+                      <h5>250</h5>
+                      <p class="txt-grey">Complete Projects</p>
+                  </div>
+                  <div class="col-sm-3 text-center">
+                      <div class="icon mb-4">
+                          <span class="d-flex justify-content-center align-items-center"> <i class="fas fas fa-bullhorn fa-xl"></i></span>   
+                      </div>
+                      <h5>9450</h5>
+                      <p class="txt-grey">lines of code</p>
+                  </div>
+                  <div class="col-sm-3 text-center">
+                      <div class="icon mb-4">
+                          <span class="d-flex justify-content-center align-items-center"> <i class="fas fa-download fa-xl"></i></span>   
+                      </div>
+                      <h5>780</h5>
+                      <p class="txt-grey">Files Downloaded</>
+                  </div>
+              </div>
+      </div>
+         
+  </section>
+  <!-- end counter -->
+
+  <!-- our-team -->
+  <section id="team" class="team mb-5 section-padding bg-grey">
+        
+    <div class="container text-center">
+    
+    <header class="mb-5 pb-5">
+        <h3 class="section-heading position-relative">Our Team</h3>
+        <div class="title-dots"></div>
+    </header>
+
+    <div class="row gy-5 gx-4">
+        
+      <div class="team-card col-md-4 col-sm-6 ">
+        <div class="team-content rounded-2 position-relative">
+            <div class="img mb-4 z-1 position-relative overflow-hidden z-3">
+                  
+              <img src="./imgs/1.jpg" class="img-fluid " alt="" width="100%">
+                  
+                  
+                 <div class="layer position-absolute">
+                  </div>
+                  
+       
+                  <div class="icons position-absolute top-50 start-50 d-flex justify-content-center">
+                      
+                      <div class="icon me-2">
+                        <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fab fa-facebook fa-lg"></i></span>
+                      </div>
+                      <div class="icon me-2">
+                        <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fab fa-twitter fa-lg"></i></span>
+                      </div>
+                      <div class="icon me-2">
+                        <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fab fab fa-pinterest  fa-lg"></i></span>
+                      </div>
+                      <div class="icon me-2">
+                        <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fab fa-twitter fa-lg"></i></span>
+                      </div>
+      
+                  </div>
+      
+          
+            </div>
+
+            <div class="team-info py-4 rounded-1 position-absolute start-0 end-0 z-0">
+              <h4 class="text-white">John Doe</h4>
+              <h5 class="text-white">Front-End Developer</h5>
+            </div>
+        
+            
+        </div>
+        
+        
+        
+      </div>
+      <div class="team-card col-md-4 col-sm-6 ">
+        <div class="team-content rounded-2 position-relative">
+            <div class="img mb-4 z-1 position-relative overflow-hidden z-3">
+                  
+              <img src="./imgs/2.jpg" class="img-fluid " alt="" width="100%">
+                  
+                  
+                 <div class="layer position-absolute">
+                  </div>
+                  
+       
+                  <div class="icons position-absolute top-50 start-50 d-flex justify-content-center">
+                      
+                      <div class="icon me-2">
+                        <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fab fa-facebook fa-lg"></i></span>
+                      </div>
+                      <div class="icon me-2">
+                        <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fab fa-twitter fa-lg"></i></span>
+                      </div>
+                      <div class="icon me-2">
+                        <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fab fab fa-pinterest  fa-lg"></i></span>
+                      </div>
+                      <div class="icon me-2">
+                        <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fab fa-twitter fa-lg"></i></span>
+                      </div>
+      
+                  </div>
+      
+          
+            </div>
+
+            <div class="team-info py-4 rounded-1 position-absolute start-0 end-0 z-0">
+              <h4 class="text-white">John Doe</h4>
+              <h5 class="text-white">Front-End Developer</h5>
+            </div>
+        
+            
+        </div>
+        
+        
+        
+      </div>
+      <div class="team-card col-md-4 col-sm-6 ">
+        <div class="team-content rounded-2 position-relative">
+            <div class="img mb-4 z-1 position-relative overflow-hidden z-3">
+                  
+              <img src="./imgs/1.jpg" class="img-fluid " alt="" width="100%">
+                  
+                  
+                 <div class="layer position-absolute">
+                  </div>
+                  
+       
+                  <div class="icons position-absolute top-50 start-50 d-flex justify-content-center">
+                      
+                      <div class="icon me-2">
+                        <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fab fa-facebook fa-lg"></i></span>
+                      </div>
+                      <div class="icon me-2">
+                        <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fab fa-twitter fa-lg"></i></span>
+                      </div>
+                      <div class="icon me-2">
+                        <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fab fab fa-pinterest  fa-lg"></i></span>
+                      </div>
+                      <div class="icon me-2">
+                        <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fab fa-twitter fa-lg"></i></span>
+                      </div>
+      
+                  </div>
+      
+          
+            </div>
+
+            <div class="team-info py-4 rounded-1 position-absolute start-0 end-0 z-0">
+              <h4 class="text-white">John Doe</h4>
+              <h5 class="text-white">Front-End Developer</h5>
+            </div>
+        
+            
+        </div>
+        
+        
+        
+      </div>
+    </div>
+
+    </div>
+    
+  </section>
+  <!--end our-team -->
+
+  <!-- contact-us -->
+  <section id="contact" class="cantact mb-5 section-padding position-relative">
+    <div class="container">
+      
+      <header class="mb-5 pb-5">
+        <h3 class="section-heading position-relative">Contact us</h3>
+        <div class="title-dots"></div>
+      </header>
+
+      <div class="">
+        
+        <div class="info row  text-center mb-5">
+        
+          <div class="col-md-4">
+            <div class="item">
+              <span class="icon-circle d-flex justify-content-center align-items-center"> <i class="fa fa-location-arrow fa-xl"></i></span>
+              <h6>Address</h6>
+              <p>6834 Hollywood Blvd - Los Angeles CA</p>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="item">
+              <span class="icon-circle d-flex justify-content-center align-items-center"><i class="fa fa-envelope fa-xl" aria-hidden="true"></i></span>
+              <h6>Email</h6>
+              <p>Support@website.com</p>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="item">
+              <span class="icon-circle d-flex justify-content-center align-items-center"><i class="fa fa-phone fa-xl" aria-hidden="true"></i></span>
+              <h6>Phone</h6>
+              <p>+20 010 2517 8918</p>
+            </div>
+          </div>
+  
+        </div>
+  
+        <form action="" class="mt-5">
+          <div class="mb-3 row g-4">
+          
+            <div class="col-md-6">
+              
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+            </div>
+            
+            <div class="col-md-6">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+            </div>
+          
+          </div>
+          
+          
+          <div class="mb-3">
+            
+            <textarea class="form-control" id="Textarea1" placeholder="Message" rows="3"></textarea>
+          </div>
+  
+          <input type="submit" value="Submit" class="btn btn-dark py-2 px-5 mt-3">
+        </form>
+      </div>
+      
+
+    </div>
+  </section>
+  <!--end contact-us -->
+  </main>
+  <!--end main -->
+
+  <footer class="bg-dark">
+    <div class="container text-center p-4">
+      <div class="row txt-grey pt-3">
+        <p>Copy Right 2018 © By Daniels All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+</body>
+
+</html>

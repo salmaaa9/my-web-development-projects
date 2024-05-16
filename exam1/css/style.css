@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+/* common classes */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px !important;
+    }
+}
+.bg-opacity-90{
+    opacity: 0.9;
+}
+.bg-opacity-60{
+    opacity: 0.6;
+}
+.icon-circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color:#f7f7f7;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    transition: 0.7s;
+}
+.heading{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+.w-400{
+    font-weight: 400;
+}
+.w-700{
+    font-weight: 700;
+}
+h3.section-heading{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    position: relative;
+    z-index: 20;
+    width: fit-content;
+    margin: auto;
+}
+.bg-grey {
+    background: #f7f7f7;
+}
+.txt-grey{
+    color: #748182;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.section-heading:after {
+    content: "";
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+/*end common classes */
+
+/* navbar */
+.navbar .navbar-toggler:focus{
+    border: 0;
+    box-shadow: none !important;
+}
+.navbar-nav  .nav-link{
+ position: relative;
+}
+.navbar-nav  .nav-link::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 8px;
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    transition: 700ms;
+    width: 0px;
+    transition: width 500px;
+}
+
+.navbar-nav .nav-link.active::before{
+    width: calc(100% - 16px);
+}
+/*end navbar */
+/* hero */
+.main-header{
+    background-image: url(../imgs/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-attachment: scroll;
+    transition: background-position 0.5s ease;
+}
+.main-header.scrolling{
+    background-position: 0% -40%;
+}
+.main-header .heading{
+    font-size: 50px;
+    line-height: 55px;
+}
+.main-header .w-200{
+    font-weight: 200;
+    font-size: 60px;
+    font-weight: 72px;
+}
+.main-header .social.icons a{
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: black;
+    opacity: 0.8;
+}
+.main-header .social.icons{
+    top: 65%;
+}
+/* end hero */
+
+/* about */
+.about .about-img:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -6%;
+    top: 50%;
+    transform: translateY(-30%);
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.about h2.heading{
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 800;
+}
+.about .sub-title{
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.about .lead{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.about .progress{
+    padding: 12px 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    margin-bottom: 30px;
+}
+.about .progress-bar{
+    border-radius: 5px;
+    background-color: #1c1c1c;
+}
+.about .progress-bar h6{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    margin: 0;
+}
+.about button{
+    font-size: 13px;
+    line-height: 14px;
+    transition: all 1s;
+    padding-block: 10px;
+    padding-inline: 30px;
+}
+.about .dawnload:hover{
+    background-color: white;
+    color: black;
+}
+.about .contact:hover{
+    background-color: black;
+    color: white;
+}
+/*end about */
+
+/* services */
+.services-card .heading{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 20px;
+}
+.services-content{
+    padding: 50px 20px;
+}
+.services-card:hover .icon-circle{
+    background-color: #1c1c1c;
+    color: white;
+}
+.service-txt p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*end services */
+
+/* portfolio */
+.nav-link {
+    font-weight: 700;
+    font-size: 16px;
+    color: #222;
+}
+.nav-link:focus, .nav-link:hover {
+    color:#222; 
+}
+.nav-underline.nav-link:active,
+.nav-underline.nav-link:hover {
+  border-bottom-color: currentcolor;
+}
+.portfolio-card .layer{
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+.portfolio-card .layer .icons .icon-circle{
+    background-color: #1c1c1c;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: 1px solid black;
+}
+.portfolio-card .portfolio-content:hover .layer{
+    opacity: 1;
+}
+.portfolio .icon:hover .icon-circle{
+    background-color: white;
+    color: black;
+
+}
+.portfolio h6{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 3px;
+}
+/*end portfolio */
+
+/* testimonial */
+.testimonial .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #748182;
+}
+/*end testimonial */
+
+/* counter */
+.counter h5{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 33px;
+}
+/*end counter */
+
+/* team */
+.team-card{
+    margin-bottom: 100px;
+}
+.team .team-info{
+    background-color: #343434;
+   top: 99%;
+}
+.team-card .icon-circle{
+    width: 40px;
+    height: 40px;
+    background-color: #1c1c1c;
+    color: white;
+    border: 1px solid black;
+}
+.team-card .icon:hover .icon-circle{
+    background-color: white;
+    color: black;
+}
+.team-card .layer{
+    position: absolute;
+    text-align: center;
+    inset: 5px;
+    width: 95%;
+    margin: auto;
+    height: 95%;
+    background-color: white;
+    opacity: 0;
+    transform: rotateY(180deg) scale(0.5, 0.5) ;
+    transition:all 0.5s ease-in;
+}
+.team-card:hover .layer{
+    opacity: 0.8;
+    transform: rotateY(360deg) ;
+}
+.team-card:hover .icons{
+    opacity: 1; 
+    transition: 0.5s ease-in;
+    transform:translateX(-50%) rotateY(360deg) !important;
+}
+.team-card .icons {
+    opacity: 0;
+    transform: rotateY(180deg) scale(0.5, 0.5)
+}
+.team-card .img{
+    transition: 1s;
+ }
+.team-card .img:hover img{
+   scale: 1.2;
+}
+.team .team-info h4{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 28px;
+}
+.team .team-info h5{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+}
+/*emd team */
+
+/* contact us */
+.cantact .item:hover .icon-circle{
+    background-color: black;
+    color: white;
+}
+.cantact .item .icon-circle{
+    transition: 1s;
+}
+.cantact .form-control{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    color: #748182;
+    background-color: #f4f4f4 !important;
+}
+.cantact .form-control:focus{
+   
+    border: 0;
+    border-color: #f7f7f7;
+    box-shadow: none;
+
+}
+.cantact .form .btn{
+    padding: 10px 40px !important;
+}
+.cantact .icon-circle{
+    width: 60px;
+    height: 60px;
+}
+.cantact h6{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 1rem;
+}
+.cantact p{
+    color: #748182;
+}
+/*end contact us */
+
+/* footer */
+footer  p{
+    font-size: 13px;
+    line-height: 21px;
+}
