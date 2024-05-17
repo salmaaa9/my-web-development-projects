@@ -12,6 +12,8 @@ Mealify: (HTML & CSS) This project focused on building a responsive website usin
 
 Dev Folio: (HTML, CSS & Bootstrap) This portfolio website utilizes Bootstrap to create a responsive design. (Live Link: https://rawcdn.githack.com/salmaaa9/my-web-development-projects/c3f06b325b708f85c6438a5b32be61a422766e41/dev%20folio/index.html)
 
+danials :  (HTML, CSS & Bootstrap) this project is considerd as one of my first mile stones (live link: https://rawcdn.githack.com/salmaaa9/my-web-development-projects/964819e226ddee6c854a23b76a8d23ef380b49e1/exam1/index.html)
+
 Learning and Growing:
 
 I'm constantly learning and expanding my skillset. This repository is a testament to my journey and a platform to showcase my progress. Feel free to explore my projects and provide feedback!
