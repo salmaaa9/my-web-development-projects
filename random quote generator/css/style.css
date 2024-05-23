@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-style:italic;
+}
+body{
+    background-image: url(../imgs/beautiful-view-greenery-bridge-forest-perfect-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+:root{
+    --bs-body-bg: bisque !important;
+}
+button{
+    background-color: #ACD793!important;
+}
+.quote-box{
+    /* width: 75%; */
+    background-color: #ACD793;
+    box-shadow: 0 0 20px black;
+}
